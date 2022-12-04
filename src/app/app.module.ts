@@ -9,10 +9,15 @@ import { FormsModule } from '@angular/forms';
 import { ViewPostComponent } from './view-post/view-post.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
+import { LoginComponent } from './login/login.component';
 
 const myRoute:Routes=[
   {
     path:"",
+    component:LoginComponent
+  },
+  {
+    path:"add",
     component:AddPostComponent
   },
   {
@@ -26,7 +31,8 @@ const myRoute:Routes=[
     AppComponent,
     AddPostComponent,
     ViewPostComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
