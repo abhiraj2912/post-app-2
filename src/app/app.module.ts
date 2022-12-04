@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ViewPostComponent } from './view-post/view-post.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[
   {
@@ -24,7 +25,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddPostComponent,
-    ViewPostComponent
+    ViewPostComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
